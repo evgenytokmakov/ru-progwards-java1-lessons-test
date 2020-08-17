@@ -20,8 +20,8 @@ public class AccuracyDoubleFloat {
     }
 
     public static void main(String[] args) {
-        //volumeBallDouble(6371.2) ;
-        //volumeBallFloat(6371.2f) ;
-        calculateAccuracy(6371.2);
+        //volumeBallDouble(1) ;
+        //volumeBallFloat(1f) ;
+        calculateAccuracy(6371.2f);
     }
 }
