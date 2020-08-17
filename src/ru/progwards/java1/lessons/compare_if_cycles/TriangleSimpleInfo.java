@@ -30,10 +30,26 @@ public static int minSide(int a, int b, int c){
     System.out.println("Меньшая это "+mensh);
     return mensh;
 }
+//***********************************************************************
+public static boolean isEquilateralTriangle(int a, int b, int c){
+        int prom=(a+b)/2;
+        boolean otvet = false;
+        if(prom==c) {
+            otvet = true;
+            System.out.println("Равносторонний");
+        }
+        else {
+            otvet = false;
+            System.out.println("НЕ Равносторонний");
+        }
+return otvet;
+}
+
 
 
     public static void main(String[] args) {
         maxSide(3,2,1);
         minSide(12,8,7);
+        isEquilateralTriangle(12, 12, 12);
     }
 }
