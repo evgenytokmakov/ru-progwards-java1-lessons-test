@@ -12,11 +12,28 @@ else{
 if(c-bolshaya>=0){
     bolshaya=c;
 }
-        System.out.print("Большая это "+bolshaya);
+        System.out.println("Большая это "+bolshaya);
 return bolshaya;
     }
+//***********************************************************************
+public static int minSide(int a, int b, int c){
+    int mensh;
+    if(b-a>=0){
+        mensh=a;
+    }
+    else{
+        mensh=b;
+    }
+    if(c-mensh<=0){
+        mensh=c;
+    }
+    System.out.println("Меньшая это "+mensh);
+    return mensh;
+}
+
 
     public static void main(String[] args) {
         maxSide(3,2,1);
+        minSide(12,8,7);
     }
 }
