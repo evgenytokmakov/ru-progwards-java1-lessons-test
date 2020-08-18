@@ -28,7 +28,10 @@ public class TriangleInfo {
 
         }
     }
+    //***********************************************************************
+    public static boolean isRightTriangle(int a, int b, int c){
 
+    }
     public static void main(String[] args) {
         isTriangle(2,25,11);
     }
