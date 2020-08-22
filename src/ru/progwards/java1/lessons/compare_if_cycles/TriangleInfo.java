@@ -41,15 +41,28 @@ if(akv+bkv==ckv) {
     }
 if(ckv+bkv==akv) {
             ovtetpif = true;
-            System.out.print("Является");
+            System.out.println("Является");
         }
 else {
     System.out.print("НЕ Является");
 }
 return ovtetpif;
     }
+
+    public static boolean isIsoscelesTriangle(int a, int b, int c){
+        boolean ovtetravnbedr=false;
+        if (a==b|b==c|a==c){
+            ovtetravnbedr=true;
+            System.out.printf("Равнобедренный");
+        }
+        else {
+            System.out.printf("НЕ Равнобедренный");
+        }
+        return ovtetravnbedr;
+    }
     public static void main(String[] args) {
         isTriangle(2,25,11);
         isRightTriangle(5,3,4);
+        isIsoscelesTriangle(4,3,5);
     }
 }
