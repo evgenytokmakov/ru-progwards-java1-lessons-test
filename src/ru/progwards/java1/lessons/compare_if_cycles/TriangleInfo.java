@@ -30,9 +30,26 @@ public class TriangleInfo {
     }
     //***********************************************************************
     public static boolean isRightTriangle(int a, int b, int c){
-
+        boolean ovtetpif=false;
+        int akv,bkv,ckv;
+        akv=a*a;
+        bkv=b*b;
+        ckv=c*c;
+if(akv+bkv==ckv) {
+    ovtetpif = true;
+    System.out.print("Является");
+    }
+if(ckv+bkv==akv) {
+            ovtetpif = true;
+            System.out.print("Является");
+        }
+else {
+    System.out.print("НЕ Является");
+}
+return ovtetpif;
     }
     public static void main(String[] args) {
         isTriangle(2,25,11);
+        isRightTriangle(5,3,4);
     }
 }
