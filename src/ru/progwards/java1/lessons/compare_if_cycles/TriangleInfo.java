@@ -53,16 +53,29 @@ return ovtetpif;
         boolean ovtetravnbedr=false;
         if (a==b|b==c|a==c){
             ovtetravnbedr=true;
-            System.out.printf("Равнобедренный");
+            System.out.println("Равнобедренный");
         }
         else {
-            System.out.printf("НЕ Равнобедренный");
+            System.out.println("НЕ Равнобедренный");
         }
         return ovtetravnbedr;
+    }
+
+    public static boolean containsDigit(int number, int digit){
+        boolean otvet_CD;
+        otvet_CD=Integer.toString(number).contains(Integer.toString(digit));
+        if (otvet_CD==true){
+            System.out.println("Содержит");
+        }
+        else {
+            System.out.println("НЕ Содержит");
+        }
+        return otvet_CD;
     }
     public static void main(String[] args) {
         isTriangle(2,25,11);
         isRightTriangle(5,3,4);
         isIsoscelesTriangle(4,3,5);
+        containsDigit(7569,5);
     }
 }
